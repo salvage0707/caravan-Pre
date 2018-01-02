@@ -16,6 +16,8 @@ a {
 	clear: both;
 }
 
+/* header用のcss */
+
 header {
 	width: 90%; /* 横幅いっぱい　*/
 	padding: 15px 0;
@@ -25,6 +27,7 @@ header {
 header .headline {
 	font-size: 32px;
 }
+
 .nav-list {
 	text-align: center;
 	padding: 10px 0;
@@ -35,6 +38,8 @@ header .headline {
 	display: inline-block;
 	margin: 0 20px;
 }
+
+/* main-visual用のcss */
 
 .main-visual {
 	width: 100%; /* 横幅いっぱい */
@@ -61,11 +66,15 @@ header .headline {
 	color: #fff;
 }
 
+/* main用のcss */
+
 main {
 	width: 800px;
 	margin: 0 auto;
 	padding: 70px 0;
 }
+
+/* blob用のcss   main */
 
 .blog {
 	width: 540px;
@@ -117,10 +126,95 @@ main {
 	font-size: 11px;
 }
 
+/* pagination用のcss */
+
+#pagination {
+	text-align: center;
+	padding-top: 50px;
+}
+
+#pagination p {
+	width: 30px;
+	height: 30px;
+	display: inline-block;
+	color: #fff;
+	background-color: #acabab;
+	border-radius: 3px;
+	margin: 0 5px;
+	line-height: 30px;
+}
+
+/* sideber用のcss     main */
+
 .sidebar {
 	width: 230px;
 	float: left; /* 要素を左揃えで並べる */
 }
+
+.sidebar-headline, .instagram-headline, .categories-headline {
+	border-bottom: 8px solid #f7f7f7;
+	text-align: center;
+	line-height: 0.6;
+}
+
+.sidebar-contents {
+	padding: 50px 0;
+}
+
+/* popular用のcss      sideber */
+
+.popular-text, .categories-text {
+	padding-bottom: 5px;
+	border-bottom: 1px solid #f7f7f7;
+	margin-bottom: 5px;
+}
+
+.popular-text:last-child, .categories-text:last-child {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+/* instagram用のcss     sedebar*/
+
+.instagram-box {
+	float: left;
+	width: 110px;
+	padding-top: 110px;
+	background-size: cover;
+	background-position: center;
+}
+
+.instagram-box:nth-child(odd) {
+	margin: 0 10px 10px 0;
+}
+
+.instagram-box:nth-child(1) {
+  background-image: url(img/airport.jpg);
+ }
+
+.instagram-box:nth-child(2) {
+  background-image: url(img/japan.jpg);
+}
+
+.instagram-box:nth-child(3) {
+  background-image: url(img/snow.jpg);
+}
+
+.instagram-box:nth-child(4) {
+  background-image: url(img/japan2.jpg);
+}
+
+.instagram-box:nth-child(5) {
+  background-image: url(img/lake.jpg);
+}
+
+.instagram-box:nth-child(6) {
+  background-image: url(img/road.jpg);
+}
+
+
+/* footer用のcss */
 
 footer {
 	width: 100%; /* 横幅いっぱい */
