@@ -16,9 +16,16 @@ a {
 	clear: both;
 }
 
+/* fontの変更 */
+
+header, nav, h2, .main-visual, footer {
+	font-family: Chalkduster, "Bradley Hand", Courier, "Segoe Print", sans-serif;
+}
+
 /* header用のcss */
 
 header {
+	position: relative;
 	width: 90%; /* 横幅いっぱい　*/
 	padding: 15px 0;
 	margin: 0 auto;
@@ -27,6 +34,21 @@ header {
 header .headline {
 	font-size: 32px;
 }
+
+/* sosial 用のcss */
+
+.social {
+	position: absolute;
+	top: 22px;
+	right: 22px;
+}
+
+.social i {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+/* nav用のcss */
 
 .nav-list {
 	text-align: center;
