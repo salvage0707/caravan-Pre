@@ -42,6 +42,11 @@ header .headline {
 	top: 22px;
 	right: 22px;
 }
+@media all and (max-width:768px) {
+	.social {
+		display: none;
+	}
+}
 
 .social i {
 	display: inline-block;
@@ -59,6 +64,12 @@ header .headline {
 	list-style: none;
 	display: inline-block;
 	margin: 0 20px;
+}
+@media all and (max-width:768px) {
+	.nav-list-item {
+		display: block;
+		margin: 10px 0;
+	}
 }
 
 /* main-visual用のcss */
@@ -78,6 +89,11 @@ header .headline {
 	text-align: center;
 	padding-top: 105px;
 }
+@media all and (max-width:768px) {
+	.main-visual-content {
+		width: 100%;
+	}
+}
 
 .main-visual-text {
 	color: #fff;
@@ -95,6 +111,11 @@ main {
 	margin: 0 auto;
 	padding: 70px 0;
 }
+@media all and (max-width:768px) {
+	main {
+		width: 100%
+	}
+}
 
 /* blob用のcss   main */
 
@@ -103,9 +124,19 @@ main {
 	float: left; /* 要素を左揃えで並べる */
 	margin-right: 30px;
 }
+@media all and (max-width:768px) {
+	.blog {
+		width: 100%;
+	}
+}
 
 .blog-box {
 	padding-top: 50px;
+}
+@media all and (max-width:768px) {
+	.blog-box {
+		margin: 0 10px;
+	}
 }
 
 .blog-headline {
@@ -119,10 +150,20 @@ main {
 	margin-bottom: 20px;
 	border-bottom: 1px solid #f7f7f7;
 }
+@media all and (max-width:768px) {
+	.blog-item {
+		padding: 0;
+	}
+}
 
 .blog-image {
 	height: 180px;
 	float: left;
+}
+@media all and (max-width:768px) {
+	.blog-image {
+		width: 50%;
+	}
 }
 
 .blog-text-headline {
@@ -133,10 +174,20 @@ main {
 	float: left;
 	padding: 30px 0 0 25px;
 }
+@media all and (max-width:768px) {
+	.blog-text {
+		width: 50%;
+	}
+}
 
 .blog-date {
 	font-size: 12px;
 	display: inline-block;
+}
+@media all and (max-width:768px) {
+	.blog-date {
+		font-size: 15px;
+	}
 }
 
 .category {
@@ -147,6 +198,11 @@ main {
 	color: #fff;
 	font-size: 11px;
 }
+@media all and (max-width:768px) {
+	.category {
+		display: none;
+	}
+}
 
 /* pagination用のcss */
 
@@ -154,6 +210,11 @@ main {
 	text-align: center;
 	padding-top: 50px;
 }
+/*@media all and (max-width:768px) {
+	#pagination {
+		padding-bottom: 50px;
+	}
+}*/
 
 #pagination p {
 	width: 30px;
@@ -172,15 +233,30 @@ main {
 	width: 230px;
 	float: left; /* 要素を左揃えで並べる */
 }
+@media all and (max-width:768px) {
+	.sidebar {
+		width: 100%
+	}
+}
 
 .sidebar-headline, .instagram-headline, .categories-headline {
 	border-bottom: 8px solid #f7f7f7;
 	text-align: center;
 	line-height: 0.6;
 }
+@media all and (max-width:768px) {
+	.sidebar-headline, .instagram-headline, .categories-headline {
+		margin: 30px 0;
+	}
+}
 
 .sidebar-contents {
 	padding: 50px 0;
+}
+@media all and (max-width:768px) {
+	.sidebar-contents {
+		padding: 10px;
+	}
 }
 
 /* popular用のcss      sideber */
@@ -199,6 +275,7 @@ main {
 
 /* instagram用のcss     sedebar*/
 
+
 .instagram-box {
 	float: left;
 	width: 110px;
@@ -206,10 +283,27 @@ main {
 	background-size: cover;
 	background-position: center;
 }
+@media all and (max-width:768px) {
+	.instagram-box {
+		width: calc(100vmin - 60px);
+		height: auto;
+	}
+}
 
 .instagram-box:nth-child(odd) {
 	margin: 0 10px 10px 0;
 }
+@media all and (max-width:768px) {
+	.instagram-box:nth-child(odd) {
+		margin: 7px 7px 7px 0;
+		width : calc(50% - 7px);
+	}
+	.instagram-box:nth-child(even) {
+		margin: 7px 0 7px 7px;
+		width : calc(50% - 7px);
+	}
+}
+
 
 .instagram-box:nth-child(1) {
   background-image: url(img/airport.jpg);
